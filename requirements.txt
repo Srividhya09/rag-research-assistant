@@ -4,7 +4,7 @@ langchain-core==0.3.86
 langchain-google-genai==2.1.8
 langchain-huggingface==0.1.2
 langchain-groq==0.2.5
-faiss-cpu==1.11.0.post1
+faiss-cpu==1.13.0
 sentence-transformers==5.0.0
 pymupdf==1.26.3
 streamlit==1.47.1
