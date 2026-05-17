@@ -1,0 +1,102 @@
+[
+  {
+    "question": "What is self-attention?",
+    "ground_truth": "Self-attention, sometimes called intra-attention, is an attention mechanism relating different positions of a single sequence in order to compute a representation of the sequence."
+  },
+  {
+    "question": "What is the Transformer model?",
+    "ground_truth": "The Transformer is a model architecture that relies entirely on an attention mechanism to draw global dependencies between input and output, dispensing with recurrence and convolutions entirely."
+  },
+  {
+    "question": "What does BERT stand for and what is it?",
+    "ground_truth": "BERT stands for Bidirectional Encoder Representations from Transformers. It is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers."
+  },
+  {
+    "question": "What is the key idea behind RAG?",
+    "ground_truth": "RAG combines parametric memory of a pre-trained language model with non-parametric memory using a dense vector index of external documents, retrieving relevant documents and using them to generate answers."
+  },
+  {
+    "question": "What is LoRA?",
+    "ground_truth": "LoRA is a method that freezes pre-trained model weights and injects trainable rank decomposition matrices into each layer of the Transformer architecture, greatly reducing the number of trainable parameters for downstream tasks."
+  },
+  {
+    "question": "What is QLoRA?",
+    "ground_truth": "QLoRA is an efficient fine-tuning approach that backpropagates gradients through a frozen 4-bit quantized pretrained language model into Low Rank Adapters, reducing memory usage while preserving full 16-bit fine-tuning task performance."
+  },
+  {
+    "question": "What is FAISS?",
+    "ground_truth": "FAISS is a library for efficient similarity search and clustering of dense vectors, designed to search in sets of vectors of any size, including ones that do not fit in RAM."
+  },
+  {
+    "question": "What is the GAN framework?",
+    "ground_truth": "GANs involve training two models simultaneously: a generative model that captures the data distribution, and a discriminative model that estimates the probability that a sample came from the training data rather than the generative model."
+  },
+  {
+    "question": "What are the evaluation metrics used in RAGAS?",
+    "ground_truth": "RAGAS evaluates RAG pipelines using metrics including faithfulness, answer relevancy, context precision, and context recall to measure different dimensions of retrieval and generation quality."
+  },
+  {
+    "question": "What is the Vision Transformer (ViT)?",
+    "ground_truth": "The Vision Transformer applies a pure transformer directly to sequences of image patches for image classification, demonstrating that transformers can replace convolutional neural networks when trained on sufficient data."
+  },
+  {
+    "question": "What is CLIP?",
+    "ground_truth": "CLIP is a model trained on a large dataset of image-text pairs using contrastive learning, learning visual concepts from natural language supervision and enabling zero-shot transfer to downstream vision tasks."
+  },
+  {
+    "question": "What is the main contribution of the word2vec paper?",
+    "ground_truth": "Word2vec introduces efficient methods for learning high-quality distributed vector representations of words from large datasets, using architectures like Continuous Bag-of-Words and Skip-gram models."
+  },
+  {
+    "question": "What is Sentence-BERT?",
+    "ground_truth": "Sentence-BERT modifies the BERT network using siamese and triplet network structures to derive semantically meaningful sentence embeddings that can be compared using cosine similarity."
+  },
+  {
+    "question": "What is the main idea of prompt tuning?",
+    "ground_truth": "Prompt tuning learns soft prompts — trainable continuous vectors prepended to input — to condition frozen language models to perform specific tasks, without updating any model parameters."
+  },
+  {
+    "question": "What is Mistral 7B?",
+    "ground_truth": "Mistral 7B is a 7 billion parameter language model that uses grouped-query attention and sliding window attention to achieve faster inference and handle longer sequences efficiently, outperforming larger models on many benchmarks."
+  },
+  {
+    "question": "What is LLaMA?",
+    "ground_truth": "LLaMA is a collection of foundation language models ranging from 7B to 65B parameters trained on publicly available datasets, demonstrating that smaller models trained longer can match or outperform larger models."
+  },
+  {
+    "question": "What is Dense Passage Retrieval (DPR)?",
+    "ground_truth": "DPR is a retrieval method that uses dense vector representations of passages and questions encoded by BERT-based encoders, showing that dense retrieval can outperform traditional sparse retrieval methods like BM25."
+  },
+  {
+    "question": "What is REALM?",
+    "ground_truth": "REALM is a retrieval-augmented language model that learns to retrieve and attend over documents from a large corpus during pre-training, improving performance on knowledge-intensive NLP tasks."
+  },
+  {
+    "question": "What is RoBERTa?",
+    "ground_truth": "RoBERTa is a robustly optimized BERT pretraining approach that trains longer with bigger batches, removes next sentence prediction, and uses dynamic masking, significantly improving on BERT's performance."
+  },
+  {
+    "question": "What is multi-head attention?",
+    "ground_truth": "Multi-head attention allows the model to jointly attend to information from different representation subspaces at different positions by performing the attention function in parallel across multiple heads."
+  },
+  {
+    "question": "What is DCGAN?",
+    "ground_truth": "DCGAN introduces deep convolutional generative adversarial networks that use convolutional and convolutional-transpose layers in the discriminator and generator respectively, stabilizing GAN training on image datasets."
+  },
+  {
+    "question": "What is multilingual BERT?",
+    "ground_truth": "Multilingual BERT is a single BERT model pretrained on Wikipedia text from 104 languages, enabling cross-lingual transfer learning and zero-shot cross-lingual classification without any cross-lingual training signal."
+  },
+  {
+    "question": "What is GPT-2?",
+    "ground_truth": "GPT-2 is a large transformer-based language model trained on a dataset of 8 million web pages, demonstrating that language models can perform downstream tasks in a zero-shot setting without any task-specific training."
+  },
+  {
+    "question": "What is TruthfulQA?",
+    "ground_truth": "TruthfulQA is a benchmark designed to measure whether language models generate truthful answers to questions, finding that larger models are not necessarily more truthful and can generate false answers confidently."
+  },
+  {
+    "question": "What does ROUGE measure?",
+    "ground_truth": "ROUGE measures the quality of summaries by counting the overlap of n-grams, word sequences, and word pairs between machine-generated summaries and reference summaries created by humans."
+  }
+]

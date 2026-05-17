@@ -10,7 +10,7 @@ load_dotenv()
 PROMPT_TEMPLATE = """
 You are an expert AI research assistant. Use ONLY the context below to answer the question.
 If the answer is not in the context, say "I don't have enough information in the provided papers to answer this."
-Do NOT use any outside knowledge.
+Do NOT use any outside knowledge. Be specific and detailed in your answer.
 
 Context:
 {context}
@@ -21,7 +21,7 @@ Question:
 Answer:
 """
 
-def build_chain(k=4):
+def build_chain(k=8):
     llm = ChatGroq(
         model="llama-3.1-8b-instant",
         api_key=os.getenv("GROQ_API_KEY"),
@@ -44,14 +44,11 @@ def build_chain(k=4):
 
 if __name__ == "__main__":
     chain = build_chain()
-
-    # Test with 3 questions
     questions = [
         "What is self-attention?",
         "How does LoRA reduce the number of trainable parameters?",
         "What evaluation metrics does RAGAS use?"
     ]
-
     for question in questions:
         print(f"\n{'='*60}")
         print(f"Q: {question}")
