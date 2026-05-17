@@ -1,0 +1,9 @@
+langchain==0.3.26
+langchain-community==0.3.27
+langchain-google-genai==2.1.8
+faiss-cpu==1.11.0.post1
+sentence-transformers==5.0.0
+pymupdf==1.26.3
+streamlit==1.47.1
+ragas==0.3.0
+python-dotenv==1.1.1
